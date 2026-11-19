@@ -1,0 +1,684 @@
+/* Body */
+
+
+/* ADD LINKS!!! */
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* Clock and Website Title*/
+
+.clock {
+    margin-right: auto;
+    padding-left: 20px;
+    color: #17452F;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* for navigation*/ 
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 30px;
+    background-color: beige;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(4, 68, 68);
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    text-decoration-color: goldenrod;
+}
+
+
+/* DROPDOWN MENU */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownchoice {
+    display: none;
+    position: absolute;
+    background-color: goldenrod;
+    min-width: 180px;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.dropdownchoice a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: #17452F;
+    font-size: 16px;
+}
+
+.dropdownchoice a:hover {
+    background-color: #E8D5A8;
+}
+
+.dropdown:hover .dropdownchoice {
+    display: block;
+}
+
+
+/* Homepage */
+
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+    url("https://i0.wp.com/borneoadventure.com/v3/wp-content/uploads/2012/01/BRN_DK_5221.jpg?fit=2000%2C1331&quality=60&strip=all&ssl=1");
+
+    background-size: cover;
+    background-position: center;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: 0 0 25px black;
+}
+
+.homepage-title h2 {
+    font-size: 35px;
+}
+
+.quote {
+    font-size: 25px;
+}
+
+.homepage2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.homepagebtn {
+    font-size: 20px;
+    padding: 15px 20px;
+    background-color: transparent;
+    color: beige;
+    border: 1px solid beige;
+    border-radius: 10px;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.homepagebtn:hover {
+    background-color: #F5EBD7;
+    color: #17452F;
+}
+
+/* Image Carousel */
+
+.slide-btn {
+
+    position: absolute;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    color: beige;
+
+    border: none;
+    padding: 12px;
+
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.slide-btn:hover {
+    background-color: goldenrod;
+    color: #17452F;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+/* Mobile (index page) */
+
+@media (max-width: 600px) {
+    .homepage {
+        min-height: 500px;
+    }
+
+    .homepage-title h2 {
+        font-size: 24px;
+    }
+
+    .quote {
+        font-size: 16px;
+    }
+
+    .homepagebtn {
+        font-size: 16px;
+    }
+
+    .prev {
+        left: 8px;
+    }
+
+    .next {
+        right: 8px;
+    }
+}
+
+
+
+/* Discover Pages */
+
+.discover {
+    background-color: rgb(4, 68, 68);
+    padding: 40px;
+}
+
+.discoverrow {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.discoverpic {
+    width: 400px;
+    max-width: 100%;
+    height: 280px;
+
+}
+
+.discovertext {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #F5EBD7;
+    line-height: 1.5;
+}
+
+
+/* ATTRACTIONS PAGE */
+
+.attractionheader {
+    text-align: center;
+    padding: 30px;
+    color: #17452F;
+    font-size: 25px;
+    background-color: #faf9f0;
+}
+
+.attractions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px 50px;
+    background-color: rgb(222, 195, 128);
+}
+
+.attractions2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 30px 50px;
+    background-color: rgb(222, 195, 128);
+}
+
+.attractioncard {
+    text-align: center;
+    background-color: beige;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+.attractioncard img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.attractioncard h2 {
+    color: #17452F;
+    font-size: 21px;
+    padding: 0 10px;
+}
+
+.attractioncard p {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 15px;
+}
+
+
+/* ABOUT US */
+
+.aboutus {
+    background-color: rgb(223, 200, 173);
+}
+
+.aboutus h1 {
+    text-align: center;
+    color: #17452F;
+    background-color: #D9A520;
+    padding: 30px;
+    margin: 0;
+}
+
+.aboutrow {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 20px 50px;
+}
+
+.aboutrow img {
+    width: 45%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.aboutrow article {
+    flex: 1;
+}
+
+.aboutrow h2 {
+    color: #17452F;
+}
+
+.aboutrow p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #17452F;
+    color: beige;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.footer-content section {
+    width: 20%;
+}
+
+.footer h3 {
+    font-size: 15px;
+}
+
+.footer p {
+    font-size: 12px;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #557462;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+
+/* TABLETS */
+
+@media screen and (max-width: 900px) {
+
+    .attractions {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 25px;
+    }
+
+    .discoverpic {
+        width: 45%;
+    }
+
+}
+
+
+/* MOBILE PHONES */
+
+@media screen and (max-width: 600px) {
+
+    /* TITLE AND NAVBAR */
+
+    .title {
+        font-size: 23px;
+        padding: 15px;
+    }
+
+    .title a {
+        font-size: 16px;
+    }
+
+    .navbar {
+        justify-content: center;
+        gap: 12px;
+        padding: 15px 0;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .clock {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+
+    /* DROPDOWN */
+
+    .dropdown-content {
+        min-width: 150px;
+    }
+
+    .dropdown-content a {
+        font-size: 14px;
+    }
+
+
+    /* HOMEPAGE */
+
+    .homepage {
+        min-height: 450px;
+        padding: 20px;
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .quote {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .homepage2 {
+        flex-direction: column;
+        gap: 15px;
+        padding: 25px 15px;
+    }
+
+    .homepagebtn {
+        font-size: 18px;
+    }
+
+
+    /* DISCOVER BRUNEI */
+
+    .discover {
+        padding: 20px 15px;
+    }
+
+    .discoverrow {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+        margin-bottom: 35px;
+    }
+
+    .discoverpic {
+        width: 100%;
+        height: 230px;
+    }
+
+    .discovertext {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+
+    /* ATTRACTIONS */
+
+    .attractions,
+    .attractions2 {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .attractioncard img {
+        height: 220px;
+    }
+
+
+    /* ABOUT US */
+
+    .aboutrow {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .aboutrow img {
+        width: 100%;
+        height: 230px;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        padding: 15px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-content section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+
+}
+
+.plan-section {
+    width: 85%;
+    margin: 40px auto;
+    overflow: auto;
+}
+
+.plan-section h2 {
+    color: #17452F;
+    border-bottom: 2px solid #D9A520;
+    padding-bottom: 10px;
+}
+
+.plan-section img {
+    width: 40%;
+    height: 230px;
+    object-fit: cover;
+    float: left;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.plan-section p {
+    line-height: 1.8;
+}
+
+.plan-section a {
+    color: #17452F;
+}
+
+@media screen and (max-width: 700px) {
+    .plan-section img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+/* THEME TOGGLE BUTTON */
+
+#theme-toggle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    padding: 9px 13px;
+    background-color: #17452F;
+    color: beige;
+    border: 1px solid #D9A520;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#theme-toggle:hover {
+    background-color: #D9A520;
+    color: #17452F;
+}
+
+
+/* DARK MODE */
+
+body.dark-mode {
+    background-color: #17251e;
+    color: #F5EBD7;
+}
+
+/* Website title */
+
+body.dark-mode .title {
+    background-color: #263B30;
+    color: #F5EBD7;
+}
+
+/* Navbar */
+
+body.dark-mode .navbar {
+    background-color: #263B30;
+}
+
+body.dark-mode .navbar a {
+    color: #F5EBD7;
+}
+
+/* Dropdown */
+
+body.dark-mode .dropdownchoice {
+    background-color: #263B30;
+}
+
+body.dark-mode .dropdownchoice a {
+    color: #F5EBD7;
+}
+
+body.dark-mode .dropdownchoice a:hover {
+    background-color: #405A49;
+}
+
+/* Discover Brunei */
+
+body.dark-mode .discover {
+    background-color: #20382C;
+}
+
+/* Attractions */
+
+body.dark-mode .attractionheader {
+    background-color: #263B30;
+    color: #F5EBD7;
+}
+
+body.dark-mode .attractions,
+body.dark-mode .attractions2 {
+    background-color: #20382C;
+}
+
+body.dark-mode .attractioncard {
+    background-color: #304438;
+    color: #F5EBD7;
+}
+
+body.dark-mode .attractioncard h2 {
+    color: #E6C66B;
+}
+
+/* About Us */
+
+body.dark-mode .aboutus {
+    background-color: #20382C;
+    color: #F5EBD7;
+}
+
+body.dark-mode .aboutus h1 {
+    background-color: #263B30;
+    color: #E6C66B;
+}
+
+body.dark-mode .aboutrow h2 {
+    color: #E6C66B;
+}
+
+/* Plan Your Visit */
+
+body.dark-mode .plan-section h2 {
+    color: #E6C66B;
+}
+
+body.dark-mode .plan-section a {
+    color: #E6C66B;
+}
+
+/* Footer */
+
+body.dark-mode .footer {
+    background-color: #101A14;
+}
+
+/* Body background class */
+
+body.dark-mode.body2 {
+    background-color: #17251e;
+}
+
+/* Theme button in dark mode */
+
+body.dark-mode #theme-toggle {
+    background-color: #D9A520;
+    color: #17452F;
+}
+
+body.dark-mode .clock {
+    color: #F5EBD7;
+}
