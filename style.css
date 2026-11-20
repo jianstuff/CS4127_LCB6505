@@ -46,8 +46,7 @@ body {
 }
 
 
-/* DROPDOWN MENU */
-
+/* Dropdown Menu */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -57,8 +56,6 @@ body {
     display: none;
     position: absolute;
     background-color: goldenrod;
-    min-width: 180px;
-    z-index: 10;
     border-radius: 5px;
 }
 
@@ -74,19 +71,16 @@ body {
     background-color: #E8D5A8;
 }
 
-/* Desktop hover */
-@media (min-width: 601px) {
-    .dropdown:hover .dropdownchoice {
-        display: block;
-    }
+/* Show dropdown when clicked */
+.dropdown input {
+    display: none;
 }
 
-/* Mobile tap */
-@media (max-width: 600px) {
-    .dropdown:focus-within .dropdownchoice {
-        display: block;
-    }
+.dropdown input:checked ~ .dropdownchoice {
+    display: block;
 }
+
+
 /* Homepage */
 
 
