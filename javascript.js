@@ -23,7 +23,7 @@ setInterval(updateClock, 1000);
 
 const themeButton = document.getElementById("theme-toggle");
 
-// Check if a theme was previously saved
+// Check if theme was previously saved
 let savedTheme = localStorage.getItem("theme");
 
 if (savedTheme === "dark") {
@@ -31,7 +31,7 @@ if (savedTheme === "dark") {
     themeButton.textContent = "☀️ Light Mode";
 }
 
-// Switch themes when button is clicked
+// Switch bg
 themeButton.addEventListener("click", function() {
 
     document.body.classList.toggle("dark-mode");
@@ -54,7 +54,7 @@ themeButton.addEventListener("click", function() {
 
 
 
-// HOMEPAGE IMAGE CAROUSEL
+// Img carousel
 
 const homepage = document.getElementById("homepage");
 
@@ -70,7 +70,7 @@ const images = [
 
 let currentImage = 0;
 
-// Change homepage background
+// Dark overlay
 function showImage() {
 
     homepage.style.backgroundImage =
@@ -79,7 +79,7 @@ function showImage() {
 
 }
 
-// Next image
+// next
 document.getElementById("next-btn").addEventListener("click", function() {
 
     currentImage++;
@@ -92,7 +92,7 @@ document.getElementById("next-btn").addEventListener("click", function() {
 
 });
 
-// Previous image
+// prev
 document.getElementById("prev-btn").addEventListener("click", function() {
 
     currentImage--;
